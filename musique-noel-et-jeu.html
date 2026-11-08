@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>musique de noël</title>
+      <link href="style.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+<body>
+   <div class="snow"></div>
+        <div class="snow snow2"></div>
+        <div class="snow snow3"></div>
+   <header class="site-header">
+        <div class="logo">
+            <h1>🎄pole nord</h1>
+        </div>
+        <div class="image-père-noël">
+            <img src="image-père_noël.png" alt="image du père noël" width="60" height="60px">
+        </div>
+        <nav class="navigation">
+            <a href="index.html" class="btn-rouge">menu principal</a>
+        </nav> 
+    </div>
+   </header>
+            <div class="lecteur-noel-container">
+  <div class="lecteur-header">
+    <span class="lecteur-icone">🎵</span>
+    <h3>Musiques de Noël</h3>
+  </div>
+
+  <select id="selecteur-musique" class="select-musique">
+  <option value="Jingle-Bells-normal.mp3">🔔 Jingle Bells</option>
+  <option value="Jingle-Bells-Calm.mp3">🔔 Jingle Bells Calm</option>
+  <option value="Jingle-Bells-ambiance.mp3">🔔 Jingle Bells Ambiance</option>
+  <option value="We-Wish-You_marry-christmas.mp3">✨ We Wish You a Merry Christmas</option>
+  <option value="Silent-Night.mp3">🌙 Silent Night</option>
+  <option value="Dance-of-the-Sugar-Plum-Fairy.mp3">🧚 Dance of the Sugar Plum Fairy</option>
+  <option value="Deck-the-Halls-B.mp3">🎄 Deck the Halls</option>
+  <option value="tunetank-christmas.mp3">🎶tunetank christmas</option>
+  <option value="mon-beau-sapin.mp3">🎄mon beau sapin</option>
+</select>
+
+<!-- Lecteur audio HTML5 -->
+<audio id="lecteur-audio" controls loop class="lecteur-audio">
+  <source id="audio-source" src="Jingle-Bells-normal.mp3" type="audio/mpeg">
+  Votre navigateur ne supporte pas le lecteur audio.
+</audio>
+  
+  <p class="credit-musique">Musiques libres de droits par Kevin MacLeod (Incompetech). tunetank (pixabay).</p>
+</div>
+
+<section id="section-minijeu" style="text-align: center; margin: 40px 0;">
+    <h2 style="color: #ffd700; margin-bottom: 15px;">🎄 Attrape les Cadeaux !</h2>
+    
+    <div class="jeu-container" style="margin: 0 auto; width: 100%; max-width: 400px; height: 450px; background: rgba(10, 25, 50, 0.9); border: 3px solid #ffd700; border-radius: 15px; position: relative; overflow: hidden; box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); display: flex; flex-direction: column;">
+        
+        <!-- En-tête du score -->
+        <div id="hud" style="padding: 12px; font-size: 1.1rem; font-weight: bold; background: rgba(0, 0, 0, 0.4); color: #ffd700;">
+            🎁 Cadeaux attrapés : <span id="score">0</span>
+        </div>
+
+        <div id="zone-jeu" style="flex: 1; position: relative; overflow: hidden; cursor: crosshair;">
+    
+    
+    <div id="ecran-fin" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); flex-direction: column; justify-content: center; align-items: center; z-index: 10;">
+        <h3 style="color: #ff4757; font-size: 1.5rem; margin-bottom: 10px;">🎅 Partie terminée !</h3>
+        <p style="font-size: 1.1rem; margin-bottom: 20px;">Tu as attrapé <span id="score-final">0</span> cadeau(x) !</p>
+        <button id="btn-rejouer" style="background-color: #ffd700; color: #0b1d3a; border: none; padding: 10px 20px; font-weight: bold; border-radius: 20px; cursor: pointer;">Rejouer</button>
+    </div>
+            
+        </div>
+    </div>
+</section>
+
+ <footer>
+  <div class="footer-contenu">
+    <div class="footer-gauche">
+      🎄 Joyeux Noël et bonnes fêtes !
+    </div>
+    
+    <div class="footer-centre">
+      <body id="haut">
+      <a href="#haut" class="btn-retour">⬆️ Retour en haut</a>
+    </div>
+</body>
+    <div class="footer-droite">
+      © 2026 – Le site officiel du père Noël
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="script-tournee.js"></script>
+</body>
+   </html>

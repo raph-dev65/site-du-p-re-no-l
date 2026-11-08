@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>le site du père noël</title>
+      <link href="style.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="image-père_noël.png">
+  </head>
+<body>
+    <div class="snow"></div>
+        <div class="snow snow2"></div>
+        <div class="snow snow3"></div>
+   <header class="site-header">
+        <div class="logo">
+            <h1>🎄Bienvenue au Pôle Nord</h1>
+        </div>
+        <div class="image-père-noël">
+            <img src="image-père_noël.png" alt="image du père noël" width="60" height="60px">
+        </div>
+        <nav class="musique">
+            <a href="musique-noel-et-jeu.html" class="btn-rouge">clic ici pour: musique & jeu.</a>
+        </nav>
+   </header>
+        <h1>le site officiel du père noël</h1>
+        <p>bienvenue dans la fabrique magique des rêves <br>Découvrez les préparatifs des lutins et de moi meme. <br> préparez la nuit la plus merveilleuse de l'année.</p>
+     <div class="décompte-container">   
+        <h2>grand dècompte de noël jusqu'au <br>25 decembre à 3h00 du matin.</h2>
+        <div class="boxes-grid">
+            <div class="box">
+            <span id="jours"class="chiffre">00</span>
+            <spanlabel>jours</spanlabel>
+        </div>
+     <div class="box">
+        <span id="heures" class="chiffre">00</span>
+        <spanlabel>heures</spanlabel>
+     </div>
+     <div class="box">
+        <span id="minutes" class="chiffre">00</span>
+        <span class="label">minutes</span>
+     </div>
+        <div class="box">
+            <span id="secondes" class="chiffre">00</span>
+            <spanlabel>secondes</spanlabel>
+              </div>
+            </div>
+          
+     <div class="boutons-container">
+        <!--bouton rouge avec une icône de lettre-->
+        <a href="#formulaire-lettre" class="btn-rouge-lettre">envoyer ma lettre</a>
+            
+        </a>
+        <!--bouton vert sombre-->
+        <a href="#section-carte" class="btn btn-vert">Le Traîneau Magique
+        </a>
+        <a href="carte-de-livraison-de-cadeaux.html" class="btn btn-jaune">
+          carte de livraison <br>des cadeaux
+        </a>
+        <a href="https://www.leetchi.com/fr/c/cagnotte-du-pere-noel-2740642631?u=a5aea857-a6a5-4671-94fd-01a1bbf66582&utm_source=copylink&utm_medium=social_sharing" target="_blank" class="btn btn-rose">
+          Si tu veux soutenir le père noël🎅🏻🫶🏻
+        </a>
+     </div> 
+      <div class="weather-card">
+        <div class="card-header">
+          <span class="badge-direct"> Météo Directe</span>
+          <svg class="icon-snowflake" viewbox="0 0 24 24"width= "20" height="20" stroke-width="2" fill="none" stroke-linecap="round"stroke-linejoin="round">
+            <line x1="12" y1="2" x2="12" y2="22"></line>
+            <line x1="20" y1="12" x2="4" y2="12"></line>
+            <line x1="17.65" y1="6.35" x2="6.35" y2="17.65"></line>
+            <line x1="17.65" y1="17.65" x2="6.35" y2="6.35"></line>
+          </svg>
+        </div>
+       <h2 class="weather-title">Pôle Nord</h2>
+       <p class="weather-subtitle"> Condition de vol actuelles</p>
+       <div class="weather-main">
+         <div id="meteo-temp" class="temperature">0°C</div>
+          <div class=" weather-status">
+            <div class="condition">
+                <svg viewbox="0 0 24 24" width="18" height="18" fill="currentcolor">
+                    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+                     </svg>
+                     <span id="meteo-condition">Neige forte</span>
+                 </div>
+                 <div class="wind">Vent: 28 km/h Nord</div>
+                 </div>
+                 </div>
+
+                 <div class="flight-status-box">
+                    <div>Visibilité : <strong id="meteo-visibilite"> Moyenne</strong></div>
+                    <div>Piste de décollage : <strong id="meteo-piste">Dégagée</strong></div>
+                 </div>
+                </div>
+
+              <div class="lecteur-noel-container">
+  <select id="selecteur-musique" class="select-musique">
+    <option value="Jingle-Bells-normal.mp3">🔔 Jingle Bells</option>
+    <option value="Jingle-Bells-Calm.mp3">🔔 Jingle Bells Calm</option>
+    <option value="Jingle-Bells-ambiance.mp3">🔔 Jingle Bells Ambiance</option>
+    <option value="We-Wish-You_marry-christmas.mp3">✨ We Wish You a Merry Christmas</option>
+    <option value="Silent-Night.mp3">🌙 Silent Night</option>
+    <option value="Dance-of-the-Sugar-Plum-Fairy.mp3">🧚 Dance of the Sugar Plum Fairy</option>
+    <option value="Deck-the-Halls-B.mp3">🎄 Deck the Halls</option>
+    <option value="tunetank-christmas.mp3">🎶tunetank christmas</option>
+    <option value="mon-beau-sapin.mp3">🎄mon beau sapin</option>
+  </select>
+
+  <audio id="lecteur-audio" controls loop class="lecteur-audio">
+    <source id="audio-source" src="Jingle-Bells-normal.mp3" type="audio/mpeg">
+    Votre navigateur ne supporte pas le lecteur audio.
+  </audio>
+   <p class="credit-musique">Musiques libres de droits par Kevin MacLeod (Incompetech). tunetank (pixabay).</p>
+</div>
+
+                <section class="controle-pole-nord">
+                 <h2>Centre de contrôle du <br> pôle nord</h2>
+                  <p>En direct de la fabrique des jouets et de la <br>piste de décollage.</p>
+                </section>
+                <div class="carte-cadeaux">
+
+    <div class="entete">
+        <span class="icone">🎁</span>
+        <span class="badge">PRODUCTION</span>
+    </div>
+
+    <h3>Jauge de Cadeaux</h3>
+
+    <div class="progression">
+        <div id="jauge-production" class="progression-remplie"></div>
+    </div>
+
+    <p id="texte-production">50% des jouets sont déjà emballés par les lutins !</p>
+   </div>
+       <div class="carte-cadeaux">
+
+    <div class="entete">
+        <span class="icone">🧸</span>
+        <span class="badge">CONSTRUCTION</span>
+    </div>
+
+    <h3>Cadeaux à Construire</h3>
+
+    <div class="progression">
+        <div id="jauge-construction" class="progression-restante"></div>
+    </div>
+
+    <p id="texte-construction">50% des cadeaux restent à construire par les lutins !</p>
+
+</div>
+        </div>
+     <div class="atelier-section">
+
+    <h2>Message des lutins</h2>
+
+    <p>
+        Bonjour les enfants, ici les lutins du Père Noël. Nous espérons que vous vous portez bien et que vous êtes sages.<br>
+
+        Nous préparons vos cadeaux avec soin, mais pour les recevoir, il va falloir écouter vos parents. Nous comptons sur vous pour être gentils et ne pas faire trop de bêtises.<br>
+
+        Que la magie de Noël vous enveloppe de sa douceur !<br><br>
+
+        Signé : les lutins du Père Noël. 🎅❄️
+    </p>
+
+    <h2>Voici notre atelier, ici nous <br>préparons vos cadeaux 🎁</h2>
+
+    <img src="atelier-des-lutins.png" alt="L'atelier des lutins" width="700">
+
+</div>
+      <h2>Controle technique <br>entrepôt du traîneau, <br> et piste de décollage.</h2>
+      <div id="section-carte" class= "carte-container">
+       <div class="card">
+  <div class="card-header">
+    <!-- Icône SVG triangle/traîneau -->
+    <svg class="icon-warning" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+    </svg>
+    <span class="badge">INSPECTION</span>
+  </div>
+
+  <h2 class="card-title">Le Traîneau Magique</h2>
+  
+  <p class="card-description">
+    Patins dorés cirés, réservoir à poussière d'étoiles plein à <span id="poussiere-niveau"> 60%.</span> <br>Chouchoutage des rennes fait avec succès.
+  </p>
+  
+  <div class="card-status">
+   <p id="statut-voyage">
+    <span class="check-icon">✓</span> 
+    <span id="texte-statut">Presque prêt pour le grand voyage</span>
+</p>
+  </div>
+</div>   
+</div>
+<h2>L'entrepôt du traînau</h2>
+<div class="image-container">
+<img src="entrepos-traineau-pere-noel.jpg" alt="traineau du père noël" width="700">
+</div>
+<h2>Piste de décollage</h2>
+    <div class="image-container2">
+    <img src="piste-de-decolage.jpg" alt="piste de décolage" width="700">
+    </div>
+      <h2>L'écurie des rennes</h2> 
+      <p>Découvrez les fidéles compagnons <br>du père noël.</p>
+    <div class="page-container">
+  <div class="card-rudolph">
+    <img src="un-renne-4.png" alt="rudolph" style="width: 200px;" height="auto; display: block">
+
+      <h2 class="rudolph-title">Rudolph</h2>
+    
+    <p>GUIDE AU NEZ ROUGE</p>
+    
+    <p class="rudolph-description">
+      Grâce à son nez rouge étincelant, aucun <br>brouillard ni aucune tempête ne peut égarer le <br>traîneau.
+    </p>
+  </div>
+</div>
+          <div class="page-container">
+  <div class="card-rudolph">
+    <div class="rudolph-icon-container">
+      <img src="eclair-renne.png" alt="Tornade" class="eclair-img" style="width: 200px;" height="auto; display: block">
+    </div>
+    
+    <h2 class="rudolph-title">éclair</h2>
+    <p>LE PLUS RAPIDE</p>
+    <p class="rudolph-description">
+      Il vole à la vitesse de l'éclair au-dessus des <br>montagnes pour distribuer les cadeaux à <br>temps.
+    </p>
+  </div>
+</div>   
+           <div class="page-container">
+  <div class="card-rudolph">
+    <div class="rudolph-icon-container">
+      <img src="pirouette-renne.png" alt="Tornade" class="eclair-img" style="width: 200px;" height="auto; display: block">
+    </div>
+    
+    <h2 class="rudolph-title">pirouette</h2>
+    <p>L'ÉLÉGANT</p>
+    <p class="rudolph-description">
+      Spécialiste des roulades célestes dans les <br>aurores boréales, il apporte de la magie aux <br>nuages et permet une bgrande agilité.
+    </p>
+  </div>
+</div>   
+<h2>Les Rennes Dans Leurs Boxes</h2>
+       <img src="box-des-rennes.jpg" alt="box des rennes" class="box-rennes_img" width="850px" style="border-radius: 20px; display:block; margin: 0 auto; max-width:100%">
+
+       <h2>Message du Père Noël</h2>
+       <div class="card-message">
+       <p>Oh ! Oh ! Oh ! Bonjour les enfants, <br>
+
+J'espère que vous avez été sages. En ce moment, je suis très occupé : j'ai des listes de Noël en <br>pagaille à lire ! À côté de moi, j'ai ma liste des enfants sages et celle des enfants qui ont été un peu moins sages. <br>Mes amis les lutins, eux aussi, travaillent dur pour vos merveilleux cadeaux. <br>Alors, pour les recevoir, il faudra les mériter ! Je compte sur vous, les enfants.
+
+J'attends vos listes de cadeaux manquants avec impatience ! <br>Pour cela, rendez-vous juste en bas : un formulaire vous sera proposé. Vous pourrez m'envoyer votre liste de cadeaux directement ici, je me ferai un plaisir de la lire et de vous mettre ces petits cadeaux au pied de votre sapin. <br>
+
+Joyeux Noël et portez-vous bien ! 🎅🏻</p>
+</div>
+       <section id="formulaire-lettre" class="lettre-pere-noel">
+
+    <h1>🎅 La Lettre au Père Noël</h1>
+
+    <p>
+        Remplis le formulaire ci-dessous pour envoyer directement
+        tes souhaits au Pôle Nord.
+    </p>
+
+    <h3 class="question-sagesse">As-tu été sage cette année ?</h3>
+
+    <div class="choix-sagesse">
+
+        <label class="option">
+            <input type="radio" name="sage">
+            😇 Très sage !
+        </label>
+
+        <label class="option">
+            <input type="radio" name="sage">
+            😜 Un petit peu coquin
+        </label>
+
+        <label class="option">
+            <input type="radio" name="sage">
+            😈 Pas très sage
+        </label>
+
+        <label class="option">
+            <input type="radio" name="sage">
+            😊 je promets de faire mieux
+        </label>
+      <div class="titre-souhaits">
+        <h3 class="titre-souhaits">🎁 Ta Liste de Souhaits</h3>
+        </div>
+
+<textarea
+    class="liste-souhaits"
+    placeholder="Cher Père Noël, cette année j'aimerais..."
+></textarea>
+
+<button class="bouton-envoi">
+    ✉️ Apposer le Sceau de Cire et Envoyer
+</button>
+        
+       <div id="zone-confirmation" class="cache">
+    <div class="enveloppe-envolee">✉️</div>
+    <p class="texte-succes">✨ Votre lettre a bien été envoyée au père Noël ! 🎅</p>
+</div>
+    </div>
+
+</section>
+<footer>
+  <div class="footer-contenu">
+    <div class="footer-gauche">
+      🎄 Joyeux Noël et bonnes fêtes !
+    </div>
+    
+    <div class="footer-centre">
+      <body id="haut">
+      <a href="#haut" class="btn-retour">⬆️ Retour en haut</a>
+    </div>
+</body>
+    <div class="footer-droite">
+      © 2026 – Le site officiel du père Noël
+    </div>
+  </div>
+</footer>
+    <script>
+function mettreAJourJaugeProduction() {
+    const maintenant = new Date();
+    const annee = maintenant.getFullYear();
+    
+    // Date de fin : 20 Décembre à 23:59:59
+    const dateFin = new Date(annee, 11, 20, 23, 59, 59);
+    
+    // Définir la progression de départ (ex: 50% au 1er novembre)
+    // Ajuste dateDebut si tu veux caler le 50% sur une date précise de lancement
+    const dateDebut = new Date(annee, 10, 1); // 1er novembre
+
+    let pourcentage = 50;
+
+    if (maintenant >= dateFin) {
+        pourcentage = 100;
+    } else if (maintenant > dateDebut) {
+        // Calcul de la progression linéaire entre dateDebut (50%) et dateFin (100%)
+        const tempsTotal = dateFin - dateDebut;
+        const tempsEcoule = maintenant - dateDebut;
+        const ratio = tempsEcoule / tempsTotal;
+        
+        pourcentage = Math.round(50 + (ratio * 50));
+    }
+
+    // Sécurité pour rester entre 50% et 100%
+    pourcentage = Math.min(100, Math.max(50, pourcentage));
+
+    // Injection dans le DOM
+    const barre = document.getElementById('jauge-production');
+    const texte = document.getElementById('texte-production');
+
+    if (barre && texte) {
+        barre.style.width = pourcentage + '%';
+        texte.textContent = `${pourcentage}% des jouets sont déjà emballés par les lutins !`;
+    }
+}
+
+// Exécution au chargement de la page
+document.addEventListener('DOMContentLoaded', mettreAJourJaugeProduction);
+</script>
+
+
+<script src="script-tournee.js"></script>
+</body>
+</html>

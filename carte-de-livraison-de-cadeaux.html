@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>la carte du père noël</title>
+      <link href="style.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+<body>
+   <div class="snow"></div>
+        <div class="snow snow2"></div>
+        <div class="snow snow3"></div>
+   <header class="site-header">
+        <div class="logo">
+            <h1>🎄pole nord</h1>
+        </div>
+        <div class="image-père-noël">
+            <img src="image-père_noël.png" alt="image du père noël" width="60" height="60px">
+        </div>
+        <nav class="navigation">
+            <a href="index.html" class="btn-rouge">menu principal</a>
+        </nav> 
+    </div>
+   </header>
+   <p>RDV le 24 décembre à 18h00 pour suivre le grand voyage du Père Noël. <br>Départ du Pôle Nord ! je vais passer par plusieurs pays jusqu'en France <br>(arrivée en France à 3h00 du matin le 25 décembre).</p>
+
+      <div class="carte-monde-conteneur">
+           <div id="message-noel">
+    🎁 Le Père Noël prépare sa tournée... </div>
+    
+    <img src="maps-du-pere-noel.png" alt="maps du père noël" width="900" height="600">
+    
+    <div id="traineau">🛷</div>
+    
+</div>
+      
+        
+       <div class="lecteur-noel-container">
+  <div class="lecteur-header">
+    <span class="lecteur-icone">🎵</span>
+    <h3>Musiques de Noël</h3>
+  </div>
+
+  <select id="selecteur-musique" class="select-musique">
+  <option value="Jingle-Bells-normal.mp3">🔔 Jingle Bells</option>
+  <option value="Jingle-Bells-Calm.mp3">🔔 Jingle Bells Calm</option>
+  <option value="Jingle-Bells-ambiance.mp3">🔔 Jingle Bells Ambiance</option>
+  <option value="We-Wish-You_marry-christmas.mp3">✨ We Wish You a Merry Christmas</option>
+  <option value="Silent-Night.mp3">🌙 Silent Night</option>
+  <option value="Dance-of-the-Sugar-Plum-Fairy.mp3">🧚 Dance of the Sugar Plum Fairy</option>
+  <option value="Deck-the-Halls-B.mp3">🎄 Deck the Halls</option>
+  <option value="tunetank-christmas.mp3">🎶tunetank christmas</option>
+  <option value="mon-beau-sapin.mp3">🎄mon beau sapin</option>
+</select>
+
+<audio id="lecteur-audio" controls loop class="lecteur-audio">
+  <source id="audio-source" src="Jingle-Bells-normal.mp3" type="audio/mpeg">
+  Votre navigateur ne supporte pas le lecteur audio.
+</audio>
+  
+  <p class="credit-musique">Musiques libres de droits par Kevin MacLeod (Incompetech). tunetank (pixabay).</p>
+</div>
+
+
+       <footer>
+  <div class="footer-contenu">
+    <div class="footer-gauche">
+      🎄 Joyeux Noël et bonnes fêtes !
+    </div>
+    
+    <div class="footer-centre">
+      <body id="haut">
+      <a href="#haut" class="btn-retour">⬆️ Retour en haut</a>
+    </div>
+</body>
+    <div class="footer-droite">
+      © 2026 – Le site officiel du père Noël
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script-tournee.js"></script>
+        </body>
+</html>
